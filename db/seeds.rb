@@ -10,7 +10,7 @@
 
 
 
-songs = Song.create!([
+songs_data  = Song.create!([
   {title: "友 〜旅立ちの時〜", url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/_QqRJpCLzU4?si=XYvwYziwdrXHjtMG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'},
   {title: "絆（混声三部合唱曲）", url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/TYpZdcjSdBI?si=df1IDzYk2-lIHxPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'},
   {title: "【合唱曲】旅立ちの日に", url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/jucLp9wr5kM?si=T69cd8VlMMkobAw3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'},
