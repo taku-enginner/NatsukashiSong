@@ -10,7 +10,7 @@
 
 
 
-songs_data  = Song.create!([
+songs_data = [
   {title: "友 〜旅立ちの時〜", url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/_QqRJpCLzU4?si=XYvwYziwdrXHjtMG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'},
   {title: "絆（混声三部合唱曲）", url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/TYpZdcjSdBI?si=df1IDzYk2-lIHxPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'},
   {title: "【合唱曲】旅立ちの日に", url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/jucLp9wr5kM?si=T69cd8VlMMkobAw3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'},
@@ -30,7 +30,7 @@ songs_data  = Song.create!([
   {title: "証（あかし） / flumpool〔混声3部合唱〕", url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/38iqBP_yl78?si=Dbf-hBLs5SJBnZ8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'},
   {title: "桜〔混声3部合唱〕", url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/t0opDeCGHxA?si=vPapyxzyO9fsqtDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'},
   {title: "Best Friend〔混声3部合唱〕", url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/HUrl-NO2cNQ?si=XDad_TKd3zCNj5Nd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'},
-])
+]
 
 songs_data.each do |song_data|
   Song.find_or_create_by!(title: song_data[:title], url: song_data[:url])
