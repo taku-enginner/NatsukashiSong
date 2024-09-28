@@ -4,5 +4,14 @@
   <div>
   <%= @song.url.html_safe %>
   </div>
-  <%= link_to "戻る", songs_path, class: "bg-indigo-700 btn hover:bg-indigo-800 mt-5 text-white" %>
+  <div class="flex mt-5">
+    <div class="flex items-center justify-center">
+      <%= link_to "https://twitter.com/share?url=#{request.url}/&text=青春の一つを思い出しました♪/&hashtags=懐かし合唱曲&via=taka11926", title: "Twitter", target: "_blank" ,class: "text-center" do %>
+        <i class="fab fa-twitter" style='color: #3399FF;'></i>
+      <% end %>
+    </div>
+    <div class="ml-4">
+      <%= link_to "戻る", songs_path, class: "bg-indigo-700 btn hover:bg-indigo-800 text-white" %>
+    </div>
+  </div>
 </div>
